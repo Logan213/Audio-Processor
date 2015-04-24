@@ -64,6 +64,32 @@ User Stories
 ************
 
 As Eddie Editor, I want to process all of the audio files I work on right from
-my computer. This will save me from continuously opening and closing different
-files, having to move around while working, and will allow me to declutter some
-of the wires and cables all over my studio.
+my computer. Specifically, I need a simple program to pass an audio file
+through, change the volume of a certain frequency, and pass the altered audio
+out of the program. This will save me from continuously opening and closing
+different files, having to move around while working, and will allow me to
+declutter some of the wires and cables all over my studio.
+
+Acceptance Stories
+==================
+
+Scenario 01: Importing an Audio File
+Given that I have a pre-recorded digital audio file,
+And that file is in a compatible format,
+When I click the "import" button,
+Then I will be taken to a screen where I can change values of different
+    frequencies in the audio file.
+
+Scenario 02: Manipulating the Audio File
+Given that I have imported the digital audio file,
+And I can alter the sound via entering values in fields or with virtual "knobs",
+When I *enter* a values for different parameters such as frequency, bandwith,
+   and volume,
+Then the overall tonal character of the audio file will change.
+
+Scenario 03: Exporting the Altered Audio
+Given that I have made changes to the audio file by altering the tone, such as
+    increasing or decreasing the bass, mid, or treble frequencices,
+When I click the "export" button,
+Then I will create a new copy of the digital audio file which exhibits the new
+    tonal characteristics.
